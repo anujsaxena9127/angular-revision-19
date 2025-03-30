@@ -9,5 +9,8 @@ import { Component, input, signal } from '@angular/core';
 export class GreetingComponent {
   message=input("hello from greeting")
   messageSignal=signal("hello from signal")
+  keyupHandler(){
+    console.log("user typed something")
+  }
 
 }
