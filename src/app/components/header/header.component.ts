@@ -1,8 +1,9 @@
 import { Component, signal } from '@angular/core';
+import { CounterComponent } from '../counter/counter.component';
 
 @Component({
   selector: 'app-header',
-  imports: [],
+  imports: [CounterComponent],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })
