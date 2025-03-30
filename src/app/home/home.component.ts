@@ -11,5 +11,9 @@ import { GreetingComponent } from '../components/greeting/greeting.component';
 export class HomeComponent {
   //passing data from parent to child compoenent
   message1="hello greeting from home component"
+// event: KeyboardEvent | undefined;
+  keyupEventhandler(event:KeyboardEvent){
+    console.log(`user press the ${event.key}`)
+  }
 
 }
